@@ -9,12 +9,9 @@
 /* Begin PBXBuildFile section */
 		77491649267CE458008315A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77491648267CE458008315A6 /* AppDelegate.swift */; };
 		7749164B267CE458008315A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749164A267CE458008315A6 /* SceneDelegate.swift */; };
-		7749164D267CE458008315A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749164C267CE458008315A6 /* ViewController.swift */; };
-		77491650267CE458008315A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7749164E267CE458008315A6 /* Main.storyboard */; };
 		77491652267CE459008315A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77491651267CE459008315A6 /* Assets.xcassets */; };
 		77491655267CE459008315A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77491653267CE459008315A6 /* LaunchScreen.storyboard */; };
 		77491660267CE459008315A6 /* RiverIslandAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749165F267CE459008315A6 /* RiverIslandAppTests.swift */; };
-		7749166B267CE459008315A6 /* RiverIslandAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749166A267CE459008315A6 /* RiverIslandAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +35,6 @@
 		77491645267CE458008315A6 /* RiverIslandApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiverIslandApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77491648267CE458008315A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7749164A267CE458008315A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7749164C267CE458008315A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7749164F267CE458008315A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77491651267CE459008315A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77491654267CE459008315A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77491656267CE459008315A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,7 +42,6 @@
 		7749165F267CE459008315A6 /* RiverIslandAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverIslandAppTests.swift; sourceTree = "<group>"; };
 		77491661267CE459008315A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77491666267CE459008315A6 /* RiverIslandAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiverIslandAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7749166A267CE459008315A6 /* RiverIslandAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverIslandAppUITests.swift; sourceTree = "<group>"; };
 		7749166C267CE459008315A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,12 +93,8 @@
 		77491647267CE458008315A6 /* RiverIslandApp */ = {
 			isa = PBXGroup;
 			children = (
-				77491648267CE458008315A6 /* AppDelegate.swift */,
-				7749164A267CE458008315A6 /* SceneDelegate.swift */,
-				7749164C267CE458008315A6 /* ViewController.swift */,
-				7749164E267CE458008315A6 /* Main.storyboard */,
-				77491651267CE459008315A6 /* Assets.xcassets */,
-				77491653267CE459008315A6 /* LaunchScreen.storyboard */,
+				77491679267CE8DA008315A6 /* App */,
+				77491678267CE8D3008315A6 /* Resources */,
 				77491656267CE459008315A6 /* Info.plist */,
 			);
 			path = RiverIslandApp;
@@ -122,10 +112,27 @@
 		77491669267CE459008315A6 /* RiverIslandAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7749166A267CE459008315A6 /* RiverIslandAppUITests.swift */,
 				7749166C267CE459008315A6 /* Info.plist */,
 			);
 			path = RiverIslandAppUITests;
+			sourceTree = "<group>";
+		};
+		77491678267CE8D3008315A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77491651267CE459008315A6 /* Assets.xcassets */,
+				77491653267CE459008315A6 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		77491679267CE8DA008315A6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				77491648267CE458008315A6 /* AppDelegate.swift */,
+				7749164A267CE458008315A6 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +240,6 @@
 			files = (
 				77491655267CE459008315A6 /* LaunchScreen.storyboard in Resources */,
 				77491652267CE459008315A6 /* Assets.xcassets in Resources */,
-				77491650267CE458008315A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7749164D267CE458008315A6 /* ViewController.swift in Sources */,
 				77491649267CE458008315A6 /* AppDelegate.swift in Sources */,
 				7749164B267CE458008315A6 /* SceneDelegate.swift in Sources */,
 			);
@@ -276,7 +281,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7749166B267CE459008315A6 /* RiverIslandAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +300,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7749164E267CE458008315A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7749164F267CE458008315A6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		77491653267CE459008315A6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,6 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXU4QPBL2H;
 				INFOPLIST_FILE = RiverIslandApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +443,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.germanhernandez.RiverIslandApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,6 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXU4QPBL2H;
 				INFOPLIST_FILE = RiverIslandApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.germanhernandez.RiverIslandApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
