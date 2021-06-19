@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: scene)
         self.window = window
         
-        let appDependencies = AppCoordinator.Dependencies(window: window)
+        let networkSession = NetworkSession.defaultSession()
+        let appDependencies = AppCoordinator.Dependencies(window: window, networkSession: networkSession)
         coordinator = AppCoordinator(dependencies: appDependencies)
         coordinator?.start()
     }
