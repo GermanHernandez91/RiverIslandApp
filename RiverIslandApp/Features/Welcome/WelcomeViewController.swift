@@ -2,6 +2,8 @@ import UIKit
 
 protocol WelcomeViewModelProtocol {
     var title: String { get }
+    
+    func didActionBtnTapped()
 }
 
 final class WelcomeViewController: UIViewController {
@@ -45,6 +47,10 @@ private extension WelcomeViewController {
         configureSubtitleLabel()
         configureActionButton()
     }
+    
+    @objc func actionBtnTapped() {
+        viewModel.didActionBtnTapped()
+    }
 }
 
 // MARK: - UI Components
@@ -78,6 +84,8 @@ private extension WelcomeViewController {
     
     func configureActionButton() {
         view.addSubview(actionButton)
+        
+        actionButton.addTarget(self, action: #selector(actionBtnTapped), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             actionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),

@@ -2,11 +2,13 @@ import UIKit
 
 private enum Screen {
     case welcome
+    case products
 }
 
 final class WelcomeCoordinator: Coordinator {
     
     // MARK: - Properties
+    private var childCoordinator: Coordinator?
     private let dependencies: Dependencies
     
     // MARK: - Lifecylce
@@ -39,10 +41,23 @@ private extension WelcomeCoordinator {
             let viewController = WelcomeViewController()
             
             viewController.viewModelFactory = {
-                WelcomeViewModel()
+                WelcomeViewModel(actionBtnTapped: { [weak self] in
+                    guard let self = self else { return }
+                    self.goTo(.products)
+                })
             }
             
             dependencies.navController.setViewControllers([viewController], animated: false)
+            
+        case .products:
+            let coordinator = makeProductsCoordinator(with: dependencies.navController)
+            childCoordinator = coordinator
+            childCoordinator?.start()
         }
+    }
+    
+    func makeProductsCoordinator(with navController: UINavigationController) -> Coordinator {
+        let productsDependencies = ProductsCoordinator.Dependencies(navController: navController)
+        return ProductsCoordinator(dependencies: productsDependencies)
     }
 }

@@ -20,6 +20,9 @@
 		777C9648267E77BB00C1C448 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9647267E77BB00C1C448 /* TitleLabel.swift */; };
 		777C964A267E7A1D00C1C448 /* SubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9649267E7A1D00C1C448 /* SubtitleLabel.swift */; };
 		777C964D267E7BAA00C1C448 /* RIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C964C267E7BAA00C1C448 /* RIButton.swift */; };
+		777C9651267E7E2800C1C448 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9650267E7E2800C1C448 /* ProductsListViewController.swift */; };
+		777C9653267E7E2F00C1C448 /* ProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9652267E7E2F00C1C448 /* ProductsListViewModel.swift */; };
+		777C9655267E7F4A00C1C448 /* ProductsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9654267E7F4A00C1C448 /* ProductsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		777C9647267E77BB00C1C448 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		777C9649267E7A1D00C1C448 /* SubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleLabel.swift; sourceTree = "<group>"; };
 		777C964C267E7BAA00C1C448 /* RIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIButton.swift; sourceTree = "<group>"; };
+		777C9650267E7E2800C1C448 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
+		777C9652267E7E2F00C1C448 /* ProductsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewModel.swift; sourceTree = "<group>"; };
+		777C9654267E7F4A00C1C448 /* ProductsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				7749167B267CE953008315A6 /* Welcome */,
+				777C964E267E7E0300C1C448 /* Products */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 			children = (
 				77491685267CEAE0008315A6 /* AppCoordinator.swift */,
 				777C9643267E75BA00C1C448 /* WelcomeCoordinator.swift */,
+				777C9654267E7F4A00C1C448 /* ProductsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -221,6 +229,23 @@
 				777C964C267E7BAA00C1C448 /* RIButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		777C964E267E7E0300C1C448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				777C964F267E7E1100C1C448 /* ProductsList */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		777C964F267E7E1100C1C448 /* ProductsList */ = {
+			isa = PBXGroup;
+			children = (
+				777C9650267E7E2800C1C448 /* ProductsListViewController.swift */,
+				777C9652267E7E2F00C1C448 /* ProductsListViewModel.swift */,
+			);
+			path = ProductsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,13 +379,16 @@
 			files = (
 				77491686267CEAE0008315A6 /* AppCoordinator.swift in Sources */,
 				777C964A267E7A1D00C1C448 /* SubtitleLabel.swift in Sources */,
+				777C9653267E7E2F00C1C448 /* ProductsListViewModel.swift in Sources */,
 				7749167D267CE986008315A6 /* WelcomeViewController.swift in Sources */,
 				7749167F267CEA5D008315A6 /* WelcomeViewModel.swift in Sources */,
+				777C9651267E7E2800C1C448 /* ProductsListViewController.swift in Sources */,
 				777C9644267E75BA00C1C448 /* WelcomeCoordinator.swift in Sources */,
 				77491684267CEAB4008315A6 /* Coordinator.swift in Sources */,
 				777C964D267E7BAA00C1C448 /* RIButton.swift in Sources */,
 				777C9648267E77BB00C1C448 /* TitleLabel.swift in Sources */,
 				77491649267CE458008315A6 /* AppDelegate.swift in Sources */,
+				777C9655267E7F4A00C1C448 /* ProductsCoordinator.swift in Sources */,
 				7749164B267CE458008315A6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
