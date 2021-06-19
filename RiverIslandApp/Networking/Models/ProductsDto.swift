@@ -1,6 +1,6 @@
 import Foundation
 
-struct ProductsDto {
+struct ProductsDto: Equatable {
     let products: [ProductItemDto]
     
     init(response: ProductsResponse) {
@@ -8,7 +8,7 @@ struct ProductsDto {
     }
 }
 
-struct ProductItemDto {
+struct ProductItemDto: Equatable {
     let name: String
     let cost: String
     let image: String

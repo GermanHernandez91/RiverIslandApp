@@ -38,6 +38,12 @@
 		777C967D267E87CE00C1C448 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C967C267E87CE00C1C448 /* Endpoint.swift */; };
 		777C9680267E880D00C1C448 /* ProductsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C967F267E880D00C1C448 /* ProductsEndpoint.swift */; };
 		777C9684267E88F000C1C448 /* ProductsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9683267E88F000C1C448 /* ProductsEndpointTests.swift */; };
+		777C9686267E893E00C1C448 /* ProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9685267E893E00C1C448 /* ProductsRepository.swift */; };
+		777C9688267E896B00C1C448 /* ProductsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9687267E896B00C1C448 /* ProductsRepo.swift */; };
+		777C968A267E89A800C1C448 /* ProductsRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9689267E89A800C1C448 /* ProductsRemoteDataSource.swift */; };
+		777C968C267E8A0800C1C448 /* ProductsRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C968B267E8A0800C1C448 /* ProductsRepoTests.swift */; };
+		777C968F267E8B2600C1C448 /* v1-plp-en_gb-2506-products.json.json in Resources */ = {isa = PBXBuildFile; fileRef = 777C968E267E8B2600C1C448 /* v1-plp-en_gb-2506-products.json.json */; };
+		777C9691267E8B4E00C1C448 /* ProductsRemoteDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9690267E8B4E00C1C448 /* ProductsRemoteDataSourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +92,12 @@
 		777C967C267E87CE00C1C448 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		777C967F267E880D00C1C448 /* ProductsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEndpoint.swift; sourceTree = "<group>"; };
 		777C9683267E88F000C1C448 /* ProductsEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEndpointTests.swift; sourceTree = "<group>"; };
+		777C9685267E893E00C1C448 /* ProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepository.swift; sourceTree = "<group>"; };
+		777C9687267E896B00C1C448 /* ProductsRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepo.swift; sourceTree = "<group>"; };
+		777C9689267E89A800C1C448 /* ProductsRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRemoteDataSource.swift; sourceTree = "<group>"; };
+		777C968B267E8A0800C1C448 /* ProductsRepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepoTests.swift; sourceTree = "<group>"; };
+		777C968E267E8B2600C1C448 /* v1-plp-en_gb-2506-products.json.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "v1-plp-en_gb-2506-products.json.json"; sourceTree = "<group>"; };
+		777C9690267E8B4E00C1C448 /* ProductsRemoteDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRemoteDataSourceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +281,7 @@
 		777C965B267E841C00C1C448 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				777C968D267E8AE300C1C448 /* Mocks */,
 				777C9682267E88DD00C1C448 /* Repository */,
 				777C965C267E842F00C1C448 /* ProductsListViewModelTests.swift */,
 			);
@@ -334,6 +347,9 @@
 			isa = PBXGroup;
 			children = (
 				777C967F267E880D00C1C448 /* ProductsEndpoint.swift */,
+				777C9685267E893E00C1C448 /* ProductsRepository.swift */,
+				777C9687267E896B00C1C448 /* ProductsRepo.swift */,
+				777C9689267E89A800C1C448 /* ProductsRemoteDataSource.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -351,8 +367,18 @@
 			isa = PBXGroup;
 			children = (
 				777C9683267E88F000C1C448 /* ProductsEndpointTests.swift */,
+				777C968B267E8A0800C1C448 /* ProductsRepoTests.swift */,
+				777C9690267E8B4E00C1C448 /* ProductsRemoteDataSourceTests.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		777C968D267E8AE300C1C448 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				777C968E267E8B2600C1C448 /* v1-plp-en_gb-2506-products.json.json */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777C968F267E8B2600C1C448 /* v1-plp-en_gb-2506-products.json.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +486,7 @@
 				777C964A267E7A1D00C1C448 /* SubtitleLabel.swift in Sources */,
 				777C9653267E7E2F00C1C448 /* ProductsListViewModel.swift in Sources */,
 				777C9665267E84DA00C1C448 /* APIClient.swift in Sources */,
+				777C968A267E89A800C1C448 /* ProductsRemoteDataSource.swift in Sources */,
 				7749167D267CE986008315A6 /* WelcomeViewController.swift in Sources */,
 				7749167F267CEA5D008315A6 /* WelcomeViewModel.swift in Sources */,
 				777C9651267E7E2800C1C448 /* ProductsListViewController.swift in Sources */,
@@ -473,6 +501,7 @@
 				777C9670267E85BB00C1C448 /* MockApiClient.swift in Sources */,
 				777C9648267E77BB00C1C448 /* TitleLabel.swift in Sources */,
 				777C9668267E851000C1C448 /* NetworkSession.swift in Sources */,
+				777C9686267E893E00C1C448 /* ProductsRepository.swift in Sources */,
 				777C9673267E862600C1C448 /* ProductsResponse.swift in Sources */,
 				77491649267CE458008315A6 /* AppDelegate.swift in Sources */,
 				777C966B267E853900C1C448 /* NetworkError.swift in Sources */,
@@ -481,6 +510,7 @@
 				7749164B267CE458008315A6 /* SceneDelegate.swift in Sources */,
 				777C967B267E878C00C1C448 /* Constants.swift in Sources */,
 				777C967D267E87CE00C1C448 /* Endpoint.swift in Sources */,
+				777C9688267E896B00C1C448 /* ProductsRepo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +521,8 @@
 				777C965D267E842F00C1C448 /* ProductsListViewModelTests.swift in Sources */,
 				777C9684267E88F000C1C448 /* ProductsEndpointTests.swift in Sources */,
 				777C965A267E821D00C1C448 /* WelcomeViewModelTests.swift in Sources */,
+				777C968C267E8A0800C1C448 /* ProductsRepoTests.swift in Sources */,
+				777C9691267E8B4E00C1C448 /* ProductsRemoteDataSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
