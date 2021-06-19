@@ -11,7 +11,6 @@
 		7749164B267CE458008315A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749164A267CE458008315A6 /* SceneDelegate.swift */; };
 		77491652267CE459008315A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77491651267CE459008315A6 /* Assets.xcassets */; };
 		77491655267CE459008315A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77491653267CE459008315A6 /* LaunchScreen.storyboard */; };
-		77491660267CE459008315A6 /* RiverIslandAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749165F267CE459008315A6 /* RiverIslandAppTests.swift */; };
 		7749167D267CE986008315A6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749167C267CE986008315A6 /* WelcomeViewController.swift */; };
 		7749167F267CEA5D008315A6 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749167E267CEA5D008315A6 /* WelcomeViewModel.swift */; };
 		77491684267CEAB4008315A6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77491683267CEAB4008315A6 /* Coordinator.swift */; };
@@ -23,17 +22,12 @@
 		777C9651267E7E2800C1C448 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9650267E7E2800C1C448 /* ProductsListViewController.swift */; };
 		777C9653267E7E2F00C1C448 /* ProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9652267E7E2F00C1C448 /* ProductsListViewModel.swift */; };
 		777C9655267E7F4A00C1C448 /* ProductsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9654267E7F4A00C1C448 /* ProductsCoordinator.swift */; };
+		777C965A267E821D00C1C448 /* WelcomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9659267E821D00C1C448 /* WelcomeViewModelTests.swift */; };
+		777C965D267E842F00C1C448 /* ProductsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C965C267E842F00C1C448 /* ProductsListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		7749165C267CE459008315A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7749163D267CE458008315A6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 77491644267CE458008315A6;
-			remoteInfo = RiverIslandApp;
-		};
-		77491667267CE459008315A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7749163D267CE458008315A6 /* Project object */;
 			proxyType = 1;
@@ -50,10 +44,7 @@
 		77491654267CE459008315A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77491656267CE459008315A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7749165B267CE459008315A6 /* RiverIslandAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiverIslandAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7749165F267CE459008315A6 /* RiverIslandAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverIslandAppTests.swift; sourceTree = "<group>"; };
 		77491661267CE459008315A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77491666267CE459008315A6 /* RiverIslandAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiverIslandAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7749166C267CE459008315A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7749167C267CE986008315A6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		7749167E267CEA5D008315A6 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		77491683267CEAB4008315A6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -65,6 +56,8 @@
 		777C9650267E7E2800C1C448 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		777C9652267E7E2F00C1C448 /* ProductsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewModel.swift; sourceTree = "<group>"; };
 		777C9654267E7F4A00C1C448 /* ProductsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCoordinator.swift; sourceTree = "<group>"; };
+		777C9659267E821D00C1C448 /* WelcomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModelTests.swift; sourceTree = "<group>"; };
+		777C965C267E842F00C1C448 /* ProductsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +75,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77491663267CE459008315A6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,7 +83,6 @@
 			children = (
 				77491647267CE458008315A6 /* RiverIslandApp */,
 				7749165E267CE459008315A6 /* RiverIslandAppTests */,
-				77491669267CE459008315A6 /* RiverIslandAppUITests */,
 				77491646267CE458008315A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,7 +92,6 @@
 			children = (
 				77491645267CE458008315A6 /* RiverIslandApp.app */,
 				7749165B267CE459008315A6 /* RiverIslandAppTests.xctest */,
-				77491666267CE459008315A6 /* RiverIslandAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,18 +113,10 @@
 		7749165E267CE459008315A6 /* RiverIslandAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				7749165F267CE459008315A6 /* RiverIslandAppTests.swift */,
+				777C9657267E820800C1C448 /* Features */,
 				77491661267CE459008315A6 /* Info.plist */,
 			);
 			path = RiverIslandAppTests;
-			sourceTree = "<group>";
-		};
-		77491669267CE459008315A6 /* RiverIslandAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7749166C267CE459008315A6 /* Info.plist */,
-			);
-			path = RiverIslandAppUITests;
 			sourceTree = "<group>";
 		};
 		77491678267CE8D3008315A6 /* Resources */ = {
@@ -248,6 +224,31 @@
 			path = ProductsList;
 			sourceTree = "<group>";
 		};
+		777C9657267E820800C1C448 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				777C9658267E821200C1C448 /* Welcome */,
+				777C965B267E841C00C1C448 /* Products */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		777C9658267E821200C1C448 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				777C9659267E821D00C1C448 /* WelcomeViewModelTests.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		777C965B267E841C00C1C448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				777C965C267E842F00C1C448 /* ProductsListViewModelTests.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,24 +287,6 @@
 			productReference = 7749165B267CE459008315A6 /* RiverIslandAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		77491665267CE459008315A6 /* RiverIslandAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 77491675267CE459008315A6 /* Build configuration list for PBXNativeTarget "RiverIslandAppUITests" */;
-			buildPhases = (
-				77491662267CE459008315A6 /* Sources */,
-				77491663267CE459008315A6 /* Frameworks */,
-				77491664267CE459008315A6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				77491668267CE459008315A6 /* PBXTargetDependency */,
-			);
-			name = RiverIslandAppUITests;
-			productName = RiverIslandAppUITests;
-			productReference = 77491666267CE459008315A6 /* RiverIslandAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -318,10 +301,7 @@
 					};
 					7749165A267CE459008315A6 = {
 						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 77491644267CE458008315A6;
-					};
-					77491665267CE459008315A6 = {
-						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 						TestTargetID = 77491644267CE458008315A6;
 					};
 				};
@@ -341,7 +321,6 @@
 			targets = (
 				77491644267CE458008315A6 /* RiverIslandApp */,
 				7749165A267CE459008315A6 /* RiverIslandAppTests */,
-				77491665267CE459008315A6 /* RiverIslandAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -357,13 +336,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		77491659267CE459008315A6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		77491664267CE459008315A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,14 +369,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77491660267CE459008315A6 /* RiverIslandAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		77491662267CE459008315A6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				777C965D267E842F00C1C448 /* ProductsListViewModelTests.swift in Sources */,
+				777C965A267E821D00C1C448 /* WelcomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,11 +381,6 @@
 			isa = PBXTargetDependency;
 			target = 77491644267CE458008315A6 /* RiverIslandApp */;
 			targetProxy = 7749165C267CE459008315A6 /* PBXContainerItemProxy */;
-		};
-		77491668267CE459008315A6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 77491644267CE458008315A6 /* RiverIslandApp */;
-			targetProxy = 77491667267CE459008315A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -596,6 +557,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXU4QPBL2H;
 				INFOPLIST_FILE = RiverIslandAppTests/Info.plist;
@@ -607,6 +569,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.germanhernandez.RiverIslandAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiverIslandApp.app/RiverIslandApp";
@@ -618,6 +581,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXU4QPBL2H;
 				INFOPLIST_FILE = RiverIslandAppTests/Info.plist;
@@ -632,46 +596,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiverIslandApp.app/RiverIslandApp";
-			};
-			name = Release;
-		};
-		77491676267CE459008315A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HXU4QPBL2H;
-				INFOPLIST_FILE = RiverIslandAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.germanhernandez.RiverIslandAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RiverIslandApp;
-			};
-			name = Debug;
-		};
-		77491677267CE459008315A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HXU4QPBL2H;
-				INFOPLIST_FILE = RiverIslandAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.germanhernandez.RiverIslandAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RiverIslandApp;
 			};
 			name = Release;
 		};
@@ -701,15 +625,6 @@
 			buildConfigurations = (
 				77491673267CE459008315A6 /* Debug */,
 				77491674267CE459008315A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		77491675267CE459008315A6 /* Build configuration list for PBXNativeTarget "RiverIslandAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				77491676267CE459008315A6 /* Debug */,
-				77491677267CE459008315A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
