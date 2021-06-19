@@ -8,10 +8,18 @@ struct ProductsLListViewModel: ProductsListViewModelProtocol {
     var products: [ProductItemDto] = []
     var repository: ProductsRepository
     
+    private var didTapCell: (ProductItemDto) -> Void
+    
     // MARK: - Lifecycle
-    init(data: ProductsDto, repository: ProductsRepository) {
+    init(data: ProductsDto, repository: ProductsRepository, didTapCell: @escaping (ProductItemDto) -> Void) {
         self.products = data.products
         self.repository = repository
+        self.didTapCell = didTapCell
+    }
+    
+    // MARK: - Methods
+    func navigateToProductDetails(with productItem: ProductItemDto) {
+        didTapCell(productItem)
     }
 }
 

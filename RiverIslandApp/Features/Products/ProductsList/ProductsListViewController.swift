@@ -5,6 +5,8 @@ protocol ProductsListViewModelProtocol {
     var rowSize: CGFloat { get }
     var products: [ProductItemDto] { get }
     var repository: ProductsRepository { get }
+    
+    func navigateToProductDetails(with productItem: ProductItemDto)
 }
 
 final class ProductsListViewController: UIViewController {
@@ -73,6 +75,6 @@ extension ProductsListViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let product = viewModel.products[indexPath.row]
-        print(product)
+        viewModel.navigateToProductDetails(with: product)
     }
 }

@@ -3,6 +3,7 @@ import UIKit
 private enum Screen {
     case fetchProducts
     case productsList(ProductsDto)
+    case productItem(ProductItemDto)
 }
 
 final class ProductsCoordinator: Coordinator {
@@ -71,10 +72,24 @@ private extension ProductsCoordinator {
             let repository = dependencies.repository
             
             viewController.viewModelFactory = {
-                ProductsLListViewModel(data: products, repository: repository)
+                ProductsLListViewModel(data: products,
+                                       repository: repository,
+                                       didTapCell: { [weak self] in self?.goTo(.productItem($0)) })
             }
             
             dependencies.navController.setViewControllers([viewController], animated: false)
+            
+        case let.productItem(productItem):
+            
+            let viewController = ProductItemDetailsViewController()
+            
+            let repository = dependencies.repository
+            
+            viewController.viewModelFactory = {
+                ProductItemDetailsViewModel(productItem: productItem, repository: repository)
+            }
+            
+            dependencies.navController.present(viewController, animated: true)
         }
     }
 }

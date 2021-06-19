@@ -60,6 +60,9 @@
 		777C96B3267E8F9000C1C448 /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C96B2267E8F9000C1C448 /* LoadingViewModel.swift */; };
 		777C96B6267E95F600C1C448 /* ProductImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C96B5267E95F600C1C448 /* ProductImage.swift */; };
 		777C96B9267E96CC00C1C448 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C96B8267E96CC00C1C448 /* ProductCell.swift */; };
+		777C96BC267EA4BE00C1C448 /* ProductItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C96BB267EA4BE00C1C448 /* ProductItemDetailsViewController.swift */; };
+		777C96BE267EA61000C1C448 /* ProductItemDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C96BD267EA61000C1C448 /* ProductItemDetailsViewModel.swift */; };
+		777C96C0267EA7B200C1C448 /* ProductItemDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C96BF267EA7B200C1C448 /* ProductItemDetailsViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +133,9 @@
 		777C96B2267E8F9000C1C448 /* LoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
 		777C96B5267E95F600C1C448 /* ProductImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImage.swift; sourceTree = "<group>"; };
 		777C96B8267E96CC00C1C448 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		777C96BB267EA4BE00C1C448 /* ProductItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemDetailsViewController.swift; sourceTree = "<group>"; };
+		777C96BD267EA61000C1C448 /* ProductItemDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemDetailsViewModel.swift; sourceTree = "<group>"; };
+		777C96BF267EA7B200C1C448 /* ProductItemDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemDetailsViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +304,7 @@
 			children = (
 				777C967E267E87EA00C1C448 /* Repository */,
 				777C9681267E885F00C1C448 /* ProductsList */,
+				777C96BA267EA4AB00C1C448 /* ProductItemDetails */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -325,6 +332,7 @@
 				777C968D267E8AE300C1C448 /* Mocks */,
 				777C9682267E88DD00C1C448 /* Repository */,
 				777C965C267E842F00C1C448 /* ProductsListViewModelTests.swift */,
+				777C96BF267EA7B200C1C448 /* ProductItemDetailsViewModelTests.swift */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -485,6 +493,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		777C96BA267EA4AB00C1C448 /* ProductItemDetails */ = {
+			isa = PBXGroup;
+			children = (
+				777C96BB267EA4BE00C1C448 /* ProductItemDetailsViewController.swift */,
+				777C96BD267EA61000C1C448 /* ProductItemDetailsViewModel.swift */,
+			);
+			path = ProductItemDetails;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -592,7 +609,9 @@
 				777C964A267E7A1D00C1C448 /* SubtitleLabel.swift in Sources */,
 				777C9653267E7E2F00C1C448 /* ProductsListViewModel.swift in Sources */,
 				777C9665267E84DA00C1C448 /* APIClient.swift in Sources */,
+				777C96BC267EA4BE00C1C448 /* ProductItemDetailsViewController.swift in Sources */,
 				777C968A267E89A800C1C448 /* ProductsRemoteDataSource.swift in Sources */,
+				777C96BE267EA61000C1C448 /* ProductItemDetailsViewModel.swift in Sources */,
 				7749167D267CE986008315A6 /* WelcomeViewController.swift in Sources */,
 				7749167F267CEA5D008315A6 /* WelcomeViewModel.swift in Sources */,
 				777C9696267E8C8800C1C448 /* ErrorMessage+Extensions.swift in Sources */,
@@ -640,6 +659,7 @@
 			files = (
 				777C965D267E842F00C1C448 /* ProductsListViewModelTests.swift in Sources */,
 				777C9684267E88F000C1C448 /* ProductsEndpointTests.swift in Sources */,
+				777C96C0267EA7B200C1C448 /* ProductItemDetailsViewModelTests.swift in Sources */,
 				777C965A267E821D00C1C448 /* WelcomeViewModelTests.swift in Sources */,
 				777C968C267E8A0800C1C448 /* ProductsRepoTests.swift in Sources */,
 				777C9691267E8B4E00C1C448 /* ProductsRemoteDataSourceTests.swift in Sources */,
