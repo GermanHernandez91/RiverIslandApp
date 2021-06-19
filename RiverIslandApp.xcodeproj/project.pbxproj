@@ -12,6 +12,14 @@
 		77491652267CE459008315A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77491651267CE459008315A6 /* Assets.xcassets */; };
 		77491655267CE459008315A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77491653267CE459008315A6 /* LaunchScreen.storyboard */; };
 		77491660267CE459008315A6 /* RiverIslandAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749165F267CE459008315A6 /* RiverIslandAppTests.swift */; };
+		7749167D267CE986008315A6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749167C267CE986008315A6 /* WelcomeViewController.swift */; };
+		7749167F267CEA5D008315A6 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749167E267CEA5D008315A6 /* WelcomeViewModel.swift */; };
+		77491684267CEAB4008315A6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77491683267CEAB4008315A6 /* Coordinator.swift */; };
+		77491686267CEAE0008315A6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77491685267CEAE0008315A6 /* AppCoordinator.swift */; };
+		777C9644267E75BA00C1C448 /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9643267E75BA00C1C448 /* WelcomeCoordinator.swift */; };
+		777C9648267E77BB00C1C448 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9647267E77BB00C1C448 /* TitleLabel.swift */; };
+		777C964A267E7A1D00C1C448 /* SubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C9649267E7A1D00C1C448 /* SubtitleLabel.swift */; };
+		777C964D267E7BAA00C1C448 /* RIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C964C267E7BAA00C1C448 /* RIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +51,14 @@
 		77491661267CE459008315A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77491666267CE459008315A6 /* RiverIslandAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiverIslandAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7749166C267CE459008315A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7749167C267CE986008315A6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		7749167E267CEA5D008315A6 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		77491683267CEAB4008315A6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		77491685267CEAE0008315A6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		777C9643267E75BA00C1C448 /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
+		777C9647267E77BB00C1C448 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		777C9649267E7A1D00C1C448 /* SubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleLabel.swift; sourceTree = "<group>"; };
+		777C964C267E7BAA00C1C448 /* RIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				77491679267CE8DA008315A6 /* App */,
+				77491680267CEA9F008315A6 /* Coordinators */,
+				7749167A267CE945008315A6 /* Features */,
+				777C9645267E77AB00C1C448 /* Views */,
+				77491681267CEAA8008315A6 /* Common */,
 				77491678267CE8D3008315A6 /* Resources */,
 				77491656267CE459008315A6 /* Info.plist */,
 			);
@@ -133,6 +153,74 @@
 				7749164A267CE458008315A6 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		7749167A267CE945008315A6 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7749167B267CE953008315A6 /* Welcome */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		7749167B267CE953008315A6 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				7749167C267CE986008315A6 /* WelcomeViewController.swift */,
+				7749167E267CEA5D008315A6 /* WelcomeViewModel.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		77491680267CEA9F008315A6 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				77491685267CEAE0008315A6 /* AppCoordinator.swift */,
+				777C9643267E75BA00C1C448 /* WelcomeCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		77491681267CEAA8008315A6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				77491682267CEAAF008315A6 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		77491682267CEAAF008315A6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				77491683267CEAB4008315A6 /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		777C9645267E77AB00C1C448 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				777C964B267E7B9A00C1C448 /* Buttons */,
+				777C9646267E77B300C1C448 /* Labels */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		777C9646267E77B300C1C448 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				777C9647267E77BB00C1C448 /* TitleLabel.swift */,
+				777C9649267E7A1D00C1C448 /* SubtitleLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		777C964B267E7B9A00C1C448 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				777C964C267E7BAA00C1C448 /* RIButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +352,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77491686267CEAE0008315A6 /* AppCoordinator.swift in Sources */,
+				777C964A267E7A1D00C1C448 /* SubtitleLabel.swift in Sources */,
+				7749167D267CE986008315A6 /* WelcomeViewController.swift in Sources */,
+				7749167F267CEA5D008315A6 /* WelcomeViewModel.swift in Sources */,
+				777C9644267E75BA00C1C448 /* WelcomeCoordinator.swift in Sources */,
+				77491684267CEAB4008315A6 /* Coordinator.swift in Sources */,
+				777C964D267E7BAA00C1C448 /* RIButton.swift in Sources */,
+				777C9648267E77BB00C1C448 /* TitleLabel.swift in Sources */,
 				77491649267CE458008315A6 /* AppDelegate.swift in Sources */,
 				7749164B267CE458008315A6 /* SceneDelegate.swift in Sources */,
 			);
