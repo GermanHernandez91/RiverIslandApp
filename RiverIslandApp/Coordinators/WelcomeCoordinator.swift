@@ -27,6 +27,8 @@ extension WelcomeCoordinator {
     
     struct Dependencies {
         let navController: UINavigationController
+        let networkSession: NetworkSession
+        let commonActions: CommonActions
     }
 }
 
@@ -50,14 +52,17 @@ private extension WelcomeCoordinator {
             dependencies.navController.setViewControllers([viewController], animated: false)
             
         case .products:
-            let coordinator = makeProductsCoordinator(with: dependencies.navController)
+            let apiClient = APIClient(networkSession: dependencies.networkSession)
+            let remoteDataSource = ProductsRemoteDataSource(apiClient: apiClient)
+            let repository = ProductsRepo(remoteDataSource: remoteDataSource)
+            let productsActions = ProductsCoordinator.Actions(displayEror: dependencies.commonActions.displayError,
+                                                             displayLoader: dependencies.commonActions.displayLoader)
+            let productsDependencies = ProductsCoordinator.Dependencies(navController: dependencies.navController,
+                                                                        repository: repository)
+            let coordinator = ProductsCoordinator(dependencies: productsDependencies, actions: productsActions)
+            
             childCoordinator = coordinator
             childCoordinator?.start()
         }
-    }
-    
-    func makeProductsCoordinator(with navController: UINavigationController) -> Coordinator {
-        let productsDependencies = ProductsCoordinator.Dependencies(navController: navController)
-        return ProductsCoordinator(dependencies: productsDependencies)
     }
 }

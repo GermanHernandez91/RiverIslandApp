@@ -113,7 +113,9 @@ private extension AppCoordinator {
     }
     
     func makeWelcomeCoordinator(with navController: UINavigationController) -> Coordinator {
-        let welcomeDependencies = WelcomeCoordinator.Dependencies(navController: navController)
+        let welcomeDependencies = WelcomeCoordinator.Dependencies(navController: navController,
+                                                                  networkSession: dependencies.networkSession,
+                                                                  commonActions: commonActions)
         return WelcomeCoordinator(dependencies: welcomeDependencies)
     }
 }
