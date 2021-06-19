@@ -26,7 +26,8 @@ private extension TitleLabel {
         textColor = .label
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.90
-        lineBreakMode = .byTruncatingTail
+        lineBreakMode = .byWordWrapping
+        numberOfLines = 3
         translatesAutoresizingMaskIntoConstraints = false
     }
 }

@@ -1,12 +1,14 @@
-import Foundation
+import UIKit
 
 protocol APIClientProtocol {
     func fetch<T: Codable>(model: T.Type ,request: APIRequest, completion: @escaping (Result<T, NetworkError>) -> Void)
+    func downloadImage(from urlString: String, completion: @escaping (UIImage?) -> Void)
 }
 
 final class APIClient: APIClientProtocol {
     
     private var networkSession: NetworkSession
+    private let cache = NSCache<NSString, UIImage>()
     
     init(networkSession: NetworkSession) {
         self.networkSession = networkSession
@@ -40,6 +42,36 @@ final class APIClient: APIClientProtocol {
                     completion(.failure(.parseError))
                 }
             }
+        }
+        
+        dataTask.resume()
+    }
+    
+    func downloadImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
+        let cacheKey = NSString(string: urlString)
+                
+        if let image = cache.object(forKey: cacheKey) {
+            completion(image)
+            return
+        }
+        
+        guard let url = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
+        
+        let dataTask = networkSession.session.dataTask(with: url) { [weak self] data, response, error in
+            guard let self = self,
+                error == nil,
+                let response = response as? HTTPURLResponse, response.statusCode == 200,
+                let data = data,
+                let image = UIImage(data: data) else {
+                    completion(nil)
+                    return
+            }
+            
+            self.cache.setObject(image, forKey: cacheKey)
+            completion(image)
         }
         
         dataTask.resume()

@@ -36,6 +36,30 @@ final class ProductsRepoTest: XCTestCase {
             }
         }
     }
+    
+    /**
+        Scenario 3: SUCCESS
+        Create repo and expect correct result from fetchProductImage
+     */
+    func test_scenario3() {
+        let sut = ProductsRepo(remoteDataSource: SuccessdingMockRemoteDataSource())
+        
+        sut.fetchProductImage(with: "") { image in
+            XCTAssertEqual(image, UIImage())
+        }
+    }
+    
+    /**
+        Scenario 4: ERROR
+        Create repo and expect nil  from fetchProductImage
+     */
+    func test_scenario4() {
+        let sut = ProductsRepo(remoteDataSource: FailingMockRemoteDataSource())
+        
+        sut.fetchProductImage(with: "") { image in
+            XCTAssertEqual(image, nil)
+        }
+    }
 }
 
 private final class SuccessdingMockRemoteDataSource: ProductsRepository {
@@ -43,12 +67,20 @@ private final class SuccessdingMockRemoteDataSource: ProductsRepository {
     func fetchProducts(completion: @escaping ProductsResult) {
         completion(.success(mockProductsDto))
     }
+    
+    func fetchProductImage(with urlString: String, completion: @escaping ProductImageResult) {
+        completion(UIImage())
+    }
 }
 
 private final class FailingMockRemoteDataSource: ProductsDataFetch {
  
     func fetchProducts(completion: @escaping ProductsResult) {
         completion(.failure(NetworkError.invalidResponse))
+    }
+    
+    func fetchProductImage(with urlString: String, completion: @escaping ProductImageResult) {
+        completion(nil)
     }
 }
 

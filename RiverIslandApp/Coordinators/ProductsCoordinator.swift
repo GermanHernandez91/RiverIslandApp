@@ -35,6 +35,7 @@ extension ProductsCoordinator {
     struct Dependencies {
         let navController: UINavigationController
         let repository: ProductsRepository
+        let networkSession: NetworkSession
     }
 }
 
@@ -65,12 +66,12 @@ private extension ProductsCoordinator {
             
         case let .productsList(products):
             
-            print(products)
-            
             let viewController = ProductsListViewController()
             
+            let repository = dependencies.repository
+            
             viewController.viewModelFactory = {
-                ProductsLListViewModel()
+                ProductsLListViewModel(data: products, repository: repository)
             }
             
             dependencies.navController.setViewControllers([viewController], animated: false)

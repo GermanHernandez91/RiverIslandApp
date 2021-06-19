@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 final class MockApiClient: APIClientProtocol {
     
@@ -36,5 +36,16 @@ final class MockApiClient: APIClientProtocol {
         } catch {
             completion(.failure(.parseError))
         }
+    }
+    
+    func downloadImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
+        
+        guard let _ = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
+        
+        let image = UIImage()
+        completion(image)
     }
 }

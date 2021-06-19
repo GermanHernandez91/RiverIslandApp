@@ -58,7 +58,8 @@ private extension WelcomeCoordinator {
             let productsActions = ProductsCoordinator.Actions(displayEror: dependencies.commonActions.displayError,
                                                              displayLoader: dependencies.commonActions.displayLoader)
             let productsDependencies = ProductsCoordinator.Dependencies(navController: dependencies.navController,
-                                                                        repository: repository)
+                                                                        repository: repository,
+                                                                        networkSession: dependencies.networkSession)
             let coordinator = ProductsCoordinator(dependencies: productsDependencies, actions: productsActions)
             
             childCoordinator = coordinator

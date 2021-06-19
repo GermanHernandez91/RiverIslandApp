@@ -29,6 +29,16 @@ extension ProductsRemoteDataSource: ProductsDataFetch {
             }
         }
     }
+    
+    func fetchProductImage(with urlString: String, completion: @escaping ProductImageResult) {
+        apiClient.downloadImage(from: urlString) { image in
+            if let image = image {
+                completion(image)
+            } else {
+                completion(nil)
+            }
+        }
+    }
 }
 
 private func getResult<T>(forResponse response: Result<T, NetworkError>) -> Result<T, RepositoryError> {

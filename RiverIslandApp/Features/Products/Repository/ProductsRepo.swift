@@ -17,4 +17,8 @@ extension ProductsRepo: ProductsRepository {
     func fetchProducts(completion: @escaping ProductsResult) {
         remoteDataSource.fetchProducts(completion: completion)
     }
+    
+    func fetchProductImage(with urlString: String, completion: @escaping ProductImageResult) {
+        remoteDataSource.fetchProductImage(with: urlString, completion: completion)
+    }
 }
