@@ -97,7 +97,7 @@ private extension WelcomeViewController {
 }
 
 fileprivate extension String {
-    static let title = "Welcome to the RiverIsland App"
+    static let title = "Welcome"
     static let subtitle = "Tap the button below and discover the best cloth collection for you"
     static let actionTitle = "ENTER"
 }
